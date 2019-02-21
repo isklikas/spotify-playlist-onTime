@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/isklikas/spotify-playlist-onTime/issues"
   },
-  "homepage": "https://github.com/isklikas/spotify-playlist-onTime#readme"
+  "homepage": "https://github.com/isklikas/spotify-playlist-onTime#readme",
+  "dependencies": {
+    "spotify-web-api-node": "^4.0.0"
+  }
 }
