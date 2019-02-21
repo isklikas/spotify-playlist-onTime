@@ -1,0 +1,22 @@
+{
+  "name": "spotify-playlist-ontime",
+  "version": "1.0.0",
+  "description": "Plan for your playlist songs to play when you intend them to (with a given start time)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isklikas/spotify-playlist-onTime.git"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "isklikas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isklikas/spotify-playlist-onTime/issues"
+  },
+  "homepage": "https://github.com/isklikas/spotify-playlist-onTime#readme"
+}
