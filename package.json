@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/isklikas/spotify-playlist-onTime#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
+    "moment": "^2.24.0",
     "spotify-web-api-node": "^4.0.0"
   }
 }
