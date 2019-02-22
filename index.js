@@ -44,7 +44,6 @@ spotifyApi
         spotifyApi.getPlaylistTracks(playlistID, {offset: offset,limit: 100})
         .then(function(data) {
           allSongs = allSongs.concat(data.body.items);
-          console.log(allSongs.length);
           if (allSongs.length == totalSongs) {
             songsArrayReady(allSongs);
           }
