@@ -70,11 +70,21 @@ spotifyApi
       var songTitle = currentSong.track.name;
       var songDuration = currentSong.track.duration_ms;
       var addedDate = moment(partyDate).add(songDuration/1000, 'seconds');
-      var timeAtStart = moment(partyDate).hour() + ":" + moment(partyDate).minute();
-      var timeWhenComplete = moment(addedDate).hour() + ":" + moment(addedDate).minute();
+      var timeAtStart = formatHourOrMinuteTo24Format(moment(partyDate).hour()) + ":" + formatHourOrMinuteTo24Format(moment(partyDate).minute());
+      var timeWhenComplete = formatHourOrMinuteTo24Format(moment(addedDate).hour()) + ":" + formatHourOrMinuteTo24Format(moment(addedDate).minute());
       var currentRow = s+1;
       var txtToShow = currentRow + ". " + songTitle + ": " + timeAtStart + " -> " + timeWhenComplete;
       console.log(txtToShow);
       partyDate = addedDate;
+    }
+  }
+
+  function formatHourOrMinuteTo24Format(timeVariable) {
+    if (Math.floor(timeVariable/10) == 0) {
+      var txtNumber = "0" + timeVariable.toString();
+      return txtNumber;
+    }
+    else {
+      return timeVariable.toString();
     }
   }
